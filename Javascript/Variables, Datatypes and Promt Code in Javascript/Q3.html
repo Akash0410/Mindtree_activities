@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<body>
+    <script>
+        function fun(){
+            var checkType = document.getElementById("checkType").value;
+            var result = document.getElementById("result");
+        if (isNaN(checkType)){
+            result.textContent = "Not Numeric";
+        }else{
+           result.textContent = "Numeric";
+        }
+        }
+        </script>
+    <b>Please input a number:</b><br>
+    <input type = "text" id = "checkType">
+    <button onclick="fun()">Click Me!</button>
+    <p id = "result"></p>
+    
+    
+    </body>
+</html>   
